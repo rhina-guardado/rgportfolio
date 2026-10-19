@@ -1,134 +1,525 @@
-@layouts.marketing()
-  <div class="home">
-    <article class="prose-card">
-      <div class="pc-top">
-        <span class="pc-status mono tag" style="color: var(--ok);">
-          <span class="dot"></span>
-          Server ready
-        </span>
-      </div>
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
 
-      <div class="pc-lead">Welcome to the power of a Hypermedia app.</div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Rhina Guardado</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Inter:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            heading: ['Space Grotesk', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
 
-      <p class="pc-para">
-        A lightweight foundation for building modern web interfaces. Straightforward, flexible, and true to the web's core simplicity.
-      </p>
+<body
+  class="bg-[#06030e] text-white font-sans min-h-screen relative overflow-x-hidden flex flex-col justify-between selection:bg-purple-500 selection:text-white">
 
-      <p class="pc-para">
-        This page is simply proof the engine started. Everything from here is yours to build.
-      </p>
 
-      <ul class="links">
-        <li>
-          <a class="lrow" href="https://docs.adonisjs.com" target="_blank" rel="noreferrer">
-            <span class="lrow__bullet"></span>
-            <span class="lrow__title">Documentation</span>
-            <span class="lrow__desc">Guides & API reference</span>
-            <span class="lrow__arrow">
-              @svg('lucide:arrow-up-right', { width: 16, height: 16 })
-            </span>
-          </a>
-        </li>
-        <li>
-          <a class="lrow" href="https://plus.adonisjs.com" target="_blank" rel="noreferrer">
-            <span class="lrow__bullet"></span>
-            <span class="lrow__title">AdonisJS Plus</span>
-            <span class="lrow__desc">Feature packs and Flow AI</span>
-            <span class="lrow__arrow">
-              @svg('lucide:arrow-up-right', { width: 16, height: 16 })
-            </span>
-          </a>
-        </li>
-        <li>
-          <a class="lrow" href="https://discord.com/invite/vDcEjq6" target="_blank" rel="noreferrer">
-            <span class="lrow__bullet"></span>
-            <span class="lrow__title">Discord</span>
-            <span class="lrow__desc">Meet fellow AdonisJS developers</span>
-            <span class="lrow__arrow">
-              @svg('lucide:arrow-up-right', { width: 16, height: 16 })
-            </span>
-          </a>
-        </li>
-      </ul>
+  <header class="w-full px-6 :px-16 pt-6 pb-14 flex justify-center items-center relative z-10 max-w-7xl mx-auto">
+    <nav class="hidden md:flex items-center space-x-10 text-lg font-medium text-white/80">
+      <a href="http://localhost:3333"
+        class="transition-all duration-300 hover:text-white hover:[text-shadow:0_0_15px_rgba(168,85,247,0.8)]">About</a>
+      <a href="http://localhost:3333/skills"
+        class="transition-all duration-300 hover:text-white hover:[text-shadow:0_0_15px_rgba(168,85,247,0.8)]">Skills</a>
+      <a href="http://localhost:3333/projects"
+        class="transition-all duration-300 hover:text-white hover:[text-shadow:0_0_15px_rgba(168,85,247,0.8)]">Projects</a>
+    </nav>
+  </header>
 
-      <div class="stack">
-        <span class="tag">Built with</span>
-        <div class="pile" role="list" aria-label="Tech stack">
-          <span class="tile" role="listitem" title="AdonisJS" style="background: #5A45FF;">
-            <svg viewBox="0 0 160 160" fill="#fff" aria-hidden="true">
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M0 80.0001C0 144.521 15.4786 160 79.9999 160 144.521 160 160 144.521 160 80.0001 160 15.4786 144.521 0 79.9999 0 15.4786 0 0 15.4786 0 80.0001zm32.2607 16.6191l25.0918-57.0266c4.2361-9.613 12.3825-14.8268 22.6474-14.8268 10.265 0 18.4113 5.2138 22.6481 14.8268l25.091 57.0266c1.141 2.77 2.118 6.3538 2.118 9.4498 0 14.175-9.939 24.114-24.114 24.114-4.828 0-8.6629-1.232-12.5444-2.479-3.9771-1.278-8.0036-2.572-13.1987-2.572-5.1349 0-9.2597 1.306-13.3154 2.589-3.9233 1.241-7.7814 2.462-12.4279 2.462-14.1752 0-24.1141-9.939-24.1141-24.114 0-3.096.9776-6.6798 2.1182-9.4498zm47.7392-47.0871L55.2344 105.581c7.332-3.422 15.8043-5.051 24.7655-5.051 8.6358 0 17.434 1.629 24.4401 5.051L79.9999 49.5321z"
-              />
-            </svg>
-          </span>
-          <span class="tile" role="listitem" title="Edge" style="background: #4F46E5;">
-            <svg viewBox="0 0 24 24" fill="#fff" aria-hidden="true">
-              <path d="M6 4l6 16 6-16-3 0-3 9-3-9z" />
-            </svg>
-          </span>
-          <span class="tile" role="listitem" title="Alpine.js" style="background: #2D3748;">
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M3 7l6 6-6 6h6l6-6-6-6z" fill="#77C1D2" />
-              <path d="M9 7l6 6-6 6h6l6-6-6-6z" fill="#2D3441" />
-            </svg>
-          </span>
-          <span class="tile" role="listitem" title="TypeScript" style="background: #3178C6;">
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <text
-                x="12"
-                y="17"
-                text-anchor="middle"
-                font-family="ui-monospace, SFMono-Regular, Menlo, monospace"
-                font-weight="700"
-                font-size="10"
-                fill="#fff"
-                letter-spacing="-0.5"
-              >
-                TS
-              </text>
-            </svg>
-          </span>
-          <span class="tile" role="listitem" title="Vite" style="background: #1E1B2E;">
-            <svg viewBox="0 0 410 404" aria-hidden="true">
-              <defs>
-                <linearGradient
-                  id="viteA"
-                  x1="6"
-                  y1="33"
-                  x2="235"
-                  y2="344"
-                  gradientUnits="userSpaceOnUse"
-                >
-                  <stop stop-color="#41D1FF" />
-                  <stop offset="1" stop-color="#BD34FE" />
-                </linearGradient>
-                <linearGradient
-                  id="viteB"
-                  x1="194"
-                  y1="8"
-                  x2="236"
-                  y2="292"
-                  gradientUnits="userSpaceOnUse"
-                >
-                  <stop stop-color="#FFEA83" />
-                  <stop offset=".083" stop-color="#FFDD35" />
-                  <stop offset="1" stop-color="#FFA800" />
-                </linearGradient>
-              </defs>
-              <path
-                d="M399.641 59.5246L215.643 388.545C211.844 395.338 202.084 395.378 198.228 388.618L10.5817 59.5563C6.38087 52.1896 12.6802 43.2665 21.0281 44.7586L205.223 77.6824C206.398 77.8924 207.601 77.8904 208.776 77.6763L389.119 44.8058C397.439 43.2894 403.768 52.1434 399.641 59.5246Z"
-                fill="url(#viteA)"
-              />
-              <path
-                d="M292.965 1.5744L156.801 28.2552C154.563 28.6937 152.906 30.5903 152.771 32.8664L144.395 174.33C144.198 177.662 147.258 180.248 150.51 179.498L188.42 170.749C191.967 169.931 195.172 173.055 194.443 176.622L183.18 231.775C182.422 235.487 185.907 238.661 189.532 237.56L212.947 230.446C216.577 229.344 220.065 232.527 219.297 236.242L201.398 322.875C200.278 328.294 207.486 331.249 210.492 326.603L212.5 323.5L323.454 102.072C325.312 98.3645 322.108 94.137 318.036 94.9233L279.014 102.452C275.347 103.159 272.227 99.7398 273.262 96.1457L298.731 7.66608C299.767 4.06956 296.642 0.649737 292.965 1.5744Z"
-                fill="url(#viteB)"
-              />
-            </svg>
-          </span>
+  <!-- Contenido Principal -->
+  <main class="w-full max-w-6xl mx-auto px-6 md:px-12 py-8 relative z-10 flex-grow flex flex-col justify-center">
+
+    <!-- Sección de Perfil / Cabecera -->
+    <div class="card flex flex-col md:flex-row items-center md:items-start gap-44 mb-10">
+      <!-- Avatar con borde brillante multicolor -->
+      <div class="relative flex-shrink-0">
+        <div
+          class="w-60 h-60 rounded-full p-1 bg-[linear-gradient(135deg,#38bdf8,#a855f7,#ec4899,#facc15)] shadow-[0_0_25px_rgba(168,85,247,0.5),0_0_50px_rgba(56,189,248,0.3)] flex items-center justify-center overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=500"
+            onerror="this.src='https://placehold.co/400x400/2a1b4e/fff?text=Rhina'" alt="Avatar"
+            class="w-full h-full object-cover rounded-full">
         </div>
       </div>
-    </article>
+
+      <!-- Saludo y Nombre -->
+      <div class="flex flex-col mt-12  justify-end text-center pt-2 ">
+        <div class="relative inline-block mb-6">
+          <span
+            class="text-lg font-light text-white/80 tracking-widest underline decoration-purple-400 decoration-1 underline-offset-4">
+            Hello! I Am
+          </span>
+        </div>
+        <h1
+          class="text-6xl font-heading font-bold text-white tracking-wide mt-1 drop-shadow-[0_0_15px_rgba(168,85,247,0.5)]">
+          Rhina Guardado
+        </h1>
+        <h1 class="text-sm  mx-4 font-sans  text-white tracking-wide mt-2 drop-shadow-[0_0_15px_rgba(168,85,247,0.5)]">
+          Even if I´m not chosen, even if I have no magic,
+          I'll prove that I can stand at the top
+        </h1>
+      </div>
+    </div>
+
+    <!-- Subtítulo -->
+    <div class="card mb-12">
+      <h2 class="text-5xl  font-heading font-medium text-white/90 drop-shadow-[0_0_15px_rgba(168,85,247,0.5)]">
+        I'm a student
+      </h2>
+    </div>
+
+    <!-- Descripción -->
+    <div class="card max-w-3xl mb-16">
+      <p class="text-white/70 text-lg/8  font-normal tracking-wide drop-shadow-[0_0_15px_rgba(168,85,247,0.5)]">
+        Passionate about technology, problem solving, and mathematical analysis.
+        I stand out for my ability to learn quickly, adapt to new tools and environments,
+        and remain proactive. I am about to start my university career to specialize in
+        backend development and cybersecurity.
+      </p>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Sección: Gustos, Referencias y Mascotas -->
+<div class="card bg-[#0a0a0a] text-white pt-8 pb-16 px-4 md:px-8 font-sans">
+  <div class="max-w-5xl mx-auto space-y-8">
+    
+    <!-- Título de la sección -->
+    <h2 class="text-3xl  font-sans tracking-tight text-white flex items-center gap-3">
+      <span class="w-2 h-7 bg-[#00f2fe] shadow-[0_0_10px_#00f2fe]"></span>
+      Intereses & Referencias
+    </h2>
+
+    <!-- Grilla de Cuadros -->
+    <div class="grid grid-cols-3  gap-6">
+
+      <!-- CUADRO 1: Música & Bandas -->
+      <div class="bg-[#111111] p-6 rounded-xl border border-gray-800 hover:border-[#00f2fe] transition-all duration-200 flex flex-col justify-between">
+        <div>
+          <div class="flex items-center justify-between mb-4">
+            <span class="text-2xl">🎧</span>
+            <span class="text-xs font-mono text-[#00f2fe] bg-black px-2.5 py-1 rounded border border-gray-800">MÚSICA</span>
+          </div>
+          <h3 class="text-lg font-semibold text-white mb-4">Música & Bandas</h3>
+          
+          <!-- Ítems derivados con imagen -->
+          <div class="space-y-3 overflow-y-auto h-64 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
+            <!-- Derivación 1 -->
+            
+            <div class="bg-black p-2.5 rounded-lg border border-gray-900 flex items-center gap-3">
+              <img src="resources/images/meetmehalfway.jpg" alt="" class="w-12 h-12 rounded object-cover border border-gray-800 shrink-0">
+              <div class="overflow-hidden">
+                <p class="text-sm font-medium text-white truncate">Meet Me Halfway</p>
+                <p class="text-xs font-mono text-gray-500">The Black Eyed Peas</p>
+              </div>
+            </div>
+
+            <!-- Derivación 2 -->
+            <div class="bg-black p-2.5 rounded-lg border border-gray-900 flex items-center gap-3">
+              <img src="resources/images/imaginedragons.png" alt="" class="w-12 h-12 rounded object-cover border border-gray-800 shrink-0">
+              <div class="overflow-hidden">
+                <p class="text-sm font-medium text-white truncate">Whatever It Takes</p>
+                <p class="text-xs font-mono text-gray-500">Imagine Dragons</p>
+              </div>
+            </div>
+
+             <div class="bg-black p-2.5 rounded-lg border border-gray-900 flex items-center gap-3">
+              <img src="resources/images/angelwithashootgun.jpg" alt="" class="w-12 h-12 rounded object-cover border border-gray-800 shrink-0">
+              <div class="overflow-hidden">
+                <p class="text-sm font-medium text-white truncate">Angel With A Shootgun</p>
+                <p class="text-xs font-mono text-gray-500">The Cab</p>
+              </div>
+            </div>
+
+
+ <div class="bg-black p-2.5 rounded-lg border border-gray-900 flex items-center gap-3">
+              <img src="resources/images/young.jpg" alt="" class="w-12 h-12 rounded object-cover border border-gray-800 shrink-0">
+              <div class="overflow-hidden">
+                <p class="text-sm font-medium text-white truncate">Youngblood</p>
+                <p class="text-xs font-mono text-gray-500">5 Seconds Of Summer</p>
+              </div>
+            </div>
+
+
+
+             <div class="bg-black p-2.5 rounded-lg border border-gray-900 flex items-center gap-3">
+              <img src="resources/images/teeth.jpg" alt="" class="w-12 h-12 rounded object-cover border border-gray-800 shrink-0">
+              <div class="overflow-hidden">
+                <p class="text-sm font-medium text-white truncate">Teeth</p>
+                <p class="text-xs font-mono text-gray-500">5 Seconds Of Summer</p>
+              </div>
+            </div>
+
+
+            
+
+             <div class="bg-black p-2.5 rounded-lg border border-gray-900 flex items-center gap-3">
+              <img src="resources/images/blackbear.jpg" alt="" class="w-12 h-12 rounded object-cover border border-gray-800 shrink-0">
+              <div class="overflow-hidden">
+                <p class="text-sm font-medium text-white truncate">Hot Girl Bummer</p>
+                <p class="text-xs font-mono text-gray-500">Blackbear</p>
+              </div>
+            </div>
+
+
+ <div class="bg-black p-2.5 rounded-lg border border-gray-900 flex items-center gap-3">
+              <img src="resources/images/damiano.jpg" alt="" class="w-12 h-12 rounded object-cover border border-gray-800 shrink-0">
+              <div class="overflow-hidden">
+                <p class="text-sm font-medium text-white truncate">The First Time</p>
+                <p class="text-xs font-mono text-gray-500">Damiano David</p>
+              </div>
+            </div>
+
+ <div class="bg-black p-2.5 rounded-lg border border-gray-900 flex items-center gap-3">
+              <img src="resources/images/badomens.jpg" alt="Pop/Gym" class="w-12 h-12 rounded object-cover border border-gray-800 shrink-0">
+              <div class="overflow-hidden">
+                <p class="text-sm font-medium text-white truncate">Bad Omens</p>
+                <p class="text-xs font-mono text-gray-500">5 Seconds Of Summer</p>
+              </div>
+            </div>
+
+
+
+
+
+
+
+
+          </div>
+        </div>
+      </div>
+
+      <!-- CUADRO 2: Series & Películas -->
+      <div class="bg-[#111111] p-6 rounded-xl border border-gray-800 hover:border-[#a855f7] transition-all duration-200 flex flex-col justify-between">
+        <div>
+          <div class="flex items-center justify-between mb-4">
+            <span class="text-2xl">🎬</span>
+            <span class="text-xs font-mono text-[#a855f7] bg-black px-2.5 py-1 rounded border border-gray-800">ENTRETENIMIENTO</span>
+          </div>
+          <h3 class="text-lg font-semibold text-white mb-4">Series & Películas</h3>
+          
+          <!-- Ítems derivados con imagen -->
+          <div class="space-y-3">
+
+            
+            <!-- Derivación 1 -->
+            <div class="bg-black p-2.5 rounded-lg border border-gray-900 flex items-center gap-3">
+              <img src="resources/images/irobot.webp" alt="" class="w-12 h-12 rounded object-cover border border-gray-800 shrink-0">
+              <div class="overflow-hidden">
+                <p class="text-sm font-medium text-white truncate">I Robot</p>
+                <p class="text-xs font-mono text-gray-500">Sciencie Fiction</p>
+              </div>
+            </div>
+
+            <!-- Derivación 2 -->
+            <div class="bg-black p-2.5 rounded-lg border border-gray-900 flex items-center gap-3">
+              <img src="resources/images/thetwilightsaga.webp" alt="" class="w-12 h-12 rounded object-cover border border-gray-800 shrink-0">
+              <div class="overflow-hidden">
+                <p class="text-sm font-medium text-white truncate">Twilight</p>
+                <p class="text-xs font-mono text-gray-500">Romantic Fantasy</p>
+              </div>
+            </div>
+
+
+
+
+              <div class="bg-black p-2.5 rounded-lg border border-gray-900 flex items-center gap-3">
+              <img src="resources/images/irobot.webp" alt="" class="w-12 h-12 rounded object-cover border border-gray-800 shrink-0">
+              <div class="overflow-hidden">
+                <p class="text-sm font-medium text-white truncate">I Robot</p>
+                <p class="text-xs font-mono text-gray-500">Sciencie Fiction</p>
+              </div>
+            </div>
+
+
+              <div class="bg-black p-2.5 rounded-lg border border-gray-900 flex items-center gap-3">
+              <img src="resources/images/irobot.webp" alt="" class="w-12 h-12 rounded object-cover border border-gray-800 shrink-0">
+              <div class="overflow-hidden">
+                <p class="text-sm font-medium text-white truncate">I Robot</p>
+                <p class="text-xs font-mono text-gray-500">Sciencie Fiction</p>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+
+
+
+      
+
+
+
+
+
+
+      <!-- CUADRO 3: Mascotas -->
+      <div class="bg-[#111111] p-6 rounded-xl border border-gray-800 hover:border-[#22c55e] transition-all duration-200 flex flex-col justify-between">
+        <div>
+          <div class="flex items-center justify-between mb-4">
+            <span class="text-2xl">🐱</span>
+            <span class="text-xs font-mono text-[#22c55e] bg-black px-2.5 py-1 rounded border border-gray-800">MASCOTAS</span>
+          </div>
+          <h3 class="text-lg font-semibold text-white mb-4">Mascotas</h3>
+          
+          <!-- Ítems derivados con imagen -->
+          <div class="space-y-3">
+            <!-- Derivación 1 -->
+            <div class="bg-black p-2.5 rounded-lg border border-gray-900 flex items-center gap-3">
+              <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=150&auto=format&fit=crop&q=80" alt="Gatito" class="w-12 h-12 rounded object-cover border border-gray-800 shrink-0">
+              <div class="overflow-hidden">
+                <p class="text-sm font-medium text-white truncate">Compañía Felina</p>
+                <p class="text-xs font-mono text-gray-500">Origen: Calma & Hogar</p>
+              </div>
+            </div>
+
+            <!-- Derivación 2 -->
+            <div class="bg-black p-2.5 rounded-lg border border-gray-900 flex items-center gap-3">
+              <img src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?w=150&auto=format&fit=crop&q=80" alt="Michi" class="w-12 h-12 rounded object-cover border border-gray-800 shrink-0">
+              <div class="overflow-hidden">
+                <p class="text-sm font-medium text-white truncate">Asistente de Debugging</p>
+                <p class="text-xs font-mono text-gray-500">Origen: Horas de desarrollo</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </div>
-@end
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Tarjetas inferiores (Contacto y Directorio) -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full mb-12">
+
+      <!-- Tarjeta de Contacto -->
+      <div
+        class=" card border border-purple-500/50 bg-[linear-gradient(135deg,rgba(20,10,38,0.7)_0%,rgba(10,5,20,0.85)_100%)] backdrop-blur-md rounded-2xl p-6 md:p-7 flex flex-col justify-between shadow-[0_0_15px_rgba(139,92,246,0.15)] hover:border-purple-400 hover:shadow-[0_0_25px_rgba(168,85,247,0.3)] transition-all">
+        <div class="text-[10px] tracking-[0.2em] uppercase font-bold text-purple-300/80 mb-4">
+          CONTACT
+        </div>
+        <div class="space-y-4 text-xs md:text-sm">
+          <div>
+            <div class="text-white/50 text-[11px] mb-0.5">Inquiries</div>
+            <a href="" class="text-white/90 break-all font-medium pointer-events-none">
+              rhinaguardadog42@gmail.com
+            </a>
+          </div>
+          <div>
+            <div class="text-white/50 text-[11px] mb-0.5">Phone</div>
+            <a href="" class="text-white/90  font-medium pointer-events-none">
+              +503 7054-9645
+            </a>
+          </div>
+          <div>
+            <div class="text-white/50 text-[11px] mb-0.5">Location</div>
+            <div class="text-white/90 font-medium pointer-events-none">
+              La Libertad, Colón
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tarjeta de Directorio -->
+      <div
+        class="card border border-purple-500/50 bg-[linear-gradient(135deg,rgba(20,10,38,0.7)_0%,rgba(10,5,20,0.85)_100%)] backdrop-blur-md rounded-2xl p-6 md:p-7 flex flex-col justify-between shadow-[0_0_15px_rgba(139,92,246,0.15)] hover:border-purple-400 hover:shadow-[0_0_25px_rgba(168,85,247,0.3)] transition-all">
+        <div class="text-[10px] tracking-[0.2em] uppercase font-bold text-purple-300/80 mb-4">
+          DIRECTORY
+        </div>
+        <div class="space-y-3">
+          <!-- LinkedIn -->
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
+            class="group flex items-center justify-between px-5 py-3 rounded-xl border border-purple-500/40 bg-purple-950/20 hover:bg-purple-900/30 hover:border-purple-400 transition-all">
+            <span class="text-sm font-medium text-white/90 flex items-center gap-3">
+              <i class="fa-brands fa-linkedin text-purple-400 text-base"></i> LinkedIn
+            </span>
+            <span class="text-white/60 group-hover:text-white transition-colors text-xs">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </span>
+          </a>
+
+          <!-- WhatsApp -->
+          <a href="https://wa.me/50370549646" target="_blank" rel="noopener noreferrer"
+            class="group flex items-center justify-between px-5 py-3 rounded-xl border border-purple-500/40 bg-purple-950/20 hover:bg-purple-900/30 hover:border-purple-400 transition-all">
+            <span class="text-sm font-medium text-white/90 flex items-center gap-3">
+              <i class="fa-brands fa-whatsapp text-emerald-400 text-base"></i> WhatsApp
+            </span>
+            <span class="text-white/60 group-hover:text-white transition-colors text-xs">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </span>
+          </a>
+
+          <!-- Instagram -->
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"
+            class="group flex items-center justify-between px-5 py-3 rounded-xl border border-purple-500/40 bg-purple-950/20 hover:bg-purple-900/30 hover:border-purple-400 transition-all">
+            <span class="text-sm font-medium text-white/90 flex items-center gap-3">
+              <i class="fa-brands fa-instagram text-pink-400 text-base"></i> Instagram
+            </span>
+            <span class="text-white/60 group-hover:text-white transition-colors text-xs">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </span>
+          </a>
+     </div>
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="w-full text-center py-6 text-xs text-white/40 border-t border-purple-950/50 relative z-10">
+    © 2026 Rhina Guardado. All rights reserved.
+  </footer>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    // Recorre cada tarjeta para que cada una tenga su propio trigger
+    gsap.utils.toArray(".card").forEach((card) => {
+      gsap.from(card, {
+        y: 60,            // sube desde 60px abajo
+        opacity: 0,
+        duration: 0.8,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: card,
+          start: "top 85%",   // cuando el top de la tarjeta llega al 85% de la pantalla
+          toggleActions: "play none none none"
+        },
+        // Tus tarjetas tienen "transition-all" de Tailwind y pelea con GSAP
+        onStart: () => (card.style.transition = "none"),
+        onComplete: () => (card.style.transition = "")
+      });
+    });
+  </script>
+</body>
