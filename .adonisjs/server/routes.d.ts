@@ -4,7 +4,7 @@ type ParamValue = string | number | bigint | boolean
 
 export type ScannedRoutes = {
   ALL: {
-    'home': { paramsTuple?: []; params?: {} }
+    'index': { paramsTuple?: []; params?: {} }
     'skills': { paramsTuple?: []; params?: {} }
     'projects': { paramsTuple?: []; params?: {} }
     'new_account.create': { paramsTuple?: []; params?: {} }
@@ -15,7 +15,7 @@ export type ScannedRoutes = {
     'session.destroy': { paramsTuple?: []; params?: {} }
   }
   GET: {
-    'home': { paramsTuple?: []; params?: {} }
+    'index': { paramsTuple?: []; params?: {} }
     'skills': { paramsTuple?: []; params?: {} }
     'projects': { paramsTuple?: []; params?: {} }
     'new_account.create': { paramsTuple?: []; params?: {} }
@@ -23,7 +23,7 @@ export type ScannedRoutes = {
     'dashboard': { paramsTuple?: []; params?: {} }
   }
   HEAD: {
-    'home': { paramsTuple?: []; params?: {} }
+    'index': { paramsTuple?: []; params?: {} }
     'skills': { paramsTuple?: []; params?: {} }
     'projects': { paramsTuple?: []; params?: {} }
     'new_account.create': { paramsTuple?: []; params?: {} }
