@@ -14,6 +14,7 @@ import router from '@adonisjs/core/services/router'
 router.on('/').render('pages/index').as('index')
 router.on('/skills').render('pages/skills').as('skills')
 router.on('/projects').render('pages/projects').as('projects')
+router.on('/imdress').render('pages/imdress').as('imdress')
 
 router
   .group(() => {

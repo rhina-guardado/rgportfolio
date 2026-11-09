@@ -7,6 +7,7 @@ export type ScannedRoutes = {
     'index': { paramsTuple?: []; params?: {} }
     'skills': { paramsTuple?: []; params?: {} }
     'projects': { paramsTuple?: []; params?: {} }
+    'imdress': { paramsTuple?: []; params?: {} }
     'new_account.create': { paramsTuple?: []; params?: {} }
     'new_account.store': { paramsTuple?: []; params?: {} }
     'session.create': { paramsTuple?: []; params?: {} }
@@ -18,6 +19,7 @@ export type ScannedRoutes = {
     'index': { paramsTuple?: []; params?: {} }
     'skills': { paramsTuple?: []; params?: {} }
     'projects': { paramsTuple?: []; params?: {} }
+    'imdress': { paramsTuple?: []; params?: {} }
     'new_account.create': { paramsTuple?: []; params?: {} }
     'session.create': { paramsTuple?: []; params?: {} }
     'dashboard': { paramsTuple?: []; params?: {} }
@@ -26,6 +28,7 @@ export type ScannedRoutes = {
     'index': { paramsTuple?: []; params?: {} }
     'skills': { paramsTuple?: []; params?: {} }
     'projects': { paramsTuple?: []; params?: {} }
+    'imdress': { paramsTuple?: []; params?: {} }
     'new_account.create': { paramsTuple?: []; params?: {} }
     'session.create': { paramsTuple?: []; params?: {} }
     'dashboard': { paramsTuple?: []; params?: {} }
