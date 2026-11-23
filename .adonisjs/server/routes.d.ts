@@ -9,6 +9,7 @@ export type ScannedRoutes = {
     'projects': { paramsTuple?: []; params?: {} }
     'imdress': { paramsTuple?: []; params?: {} }
     'dtod': { paramsTuple?: []; params?: {} }
+    'dd': { paramsTuple?: []; params?: {} }
     'new_account.create': { paramsTuple?: []; params?: {} }
     'new_account.store': { paramsTuple?: []; params?: {} }
     'session.create': { paramsTuple?: []; params?: {} }
@@ -22,6 +23,7 @@ export type ScannedRoutes = {
     'projects': { paramsTuple?: []; params?: {} }
     'imdress': { paramsTuple?: []; params?: {} }
     'dtod': { paramsTuple?: []; params?: {} }
+    'dd': { paramsTuple?: []; params?: {} }
     'new_account.create': { paramsTuple?: []; params?: {} }
     'session.create': { paramsTuple?: []; params?: {} }
     'dashboard': { paramsTuple?: []; params?: {} }
@@ -32,6 +34,7 @@ export type ScannedRoutes = {
     'projects': { paramsTuple?: []; params?: {} }
     'imdress': { paramsTuple?: []; params?: {} }
     'dtod': { paramsTuple?: []; params?: {} }
+    'dd': { paramsTuple?: []; params?: {} }
     'new_account.create': { paramsTuple?: []; params?: {} }
     'session.create': { paramsTuple?: []; params?: {} }
     'dashboard': { paramsTuple?: []; params?: {} }

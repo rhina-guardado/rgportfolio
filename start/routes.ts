@@ -16,6 +16,7 @@ router.on('/skills').render('pages/skills').as('skills')
 router.on('/projects').render('pages/projects').as('projects')
 router.on('/imdress').render('pages/imdress').as('imdress')
 router.on('/dtod').render('pages/dtod').as('dtod')
+router.on('/dd').render('pages/dd').as('dd')
 
 router
   .group(() => {

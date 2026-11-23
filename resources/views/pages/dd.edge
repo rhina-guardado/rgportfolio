@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Rhina Guardado</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Inter:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            heading: ['Space Grotesk', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body
+  class="bg-[#06030e] text-white font-sans min-h-screen relative overflow-x-hidden flex flex-col justify-between selection:bg-purple-500 selection:text-white">
+
+  <main class="w-full max-w-6xl mx-auto px-6 md:px-12 py-8 relative z-10 flex-grow flex flex-col justify-center">
+
+    <!-- Navbar -->
+    <header class="w-full pb-14 flex justify-center items-center relative z-10">
+      <nav class="hidden md:flex items-center space-x-10 text-lg font-medium text-white/80">
+        <a href="http://localhost:3333"
+          class="transition-all duration-300 hover:text-white hover:[text-shadow:0_0_15px_rgba(168,85,247,0.8)]">About</a>
+        <a href="http://localhost:3333/skills"
+          class="transition-all duration-300 hover:text-white hover:[text-shadow:0_0_15px_rgba(168,85,247,0.8)]">Skills</a>
+        <a href="http://localhost:3333/projects"
+          class="transition-all duration-300 hover:text-white hover:[text-shadow:0_0_15px_rgba(168,85,247,0.8)]">Projects</a>
+      </nav>
+    </header>
+
+    <!-- 1. Encabezado del Proyecto (alineado de borde a borde con todo el contenido) -->
+    <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 mt-4 md:mt-0">
+      <h1
+        class="text-4xl md:text-5xl tracking-wide text-white font-sans drop-shadow-[0_0_15px_rgba(168,85,247,0.5)]">
+        Door to Door - Website
+      </h1>
+
+      <div class="flex items-center gap-12 md:text-right">
+        <div>
+          <span class="block text-[10px] font-normal tracking-[0.2em] uppercase text-white/40 mb-1">Timeline</span>
+          <span class="text-sm tracking-wide font-normal text-white/90">7 Months (2026)</span>
+        </div>
+
+        <div>
+          <span class="block text-[10px] tracking-[0.2em] uppercase text-white/40 mb-1">Role</span>
+          <span class="text-sm tracking-wide text-white/90">Developer/Backend</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. Mockup Principal (centrado y exactamente del mismo ancho que el texto y las columnas) -->
+    <div class="w-full my-12 flex justify-center">
+      <img src="/images/start.png" alt="Door to Door preview" class="w-full h-auto object-cover rounded-2xl">
+    </div>
+
+    <!-- 3. Contenido en dos columnas (Izquierda: Info | Derecha: Tools & Details) -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+
+      <!-- Columna Izquierda: About it, Rol & Try It -->
+      <div class="space-y-12">
+        <div>
+          <h2 class="text-2xl tracking-[0.15em] font-light mb-4 drop-shadow-[0_0_15px_rgba(168,85,247,0.5)]">
+            About it
+          </h2>
+          <p class="text-white/70 text-base leading-relaxed font-normal tracking-widest">
+            It consists of connecting Salvadorans living abroad with products from their home country. In this part, we worked more on the design and creation using programming languages to be able to interact directly with the project.
+          </p>
+        </div>
+
+        <div>
+          <h2 class="text-2xl tracking-[0.15em] font-light mb-4 drop-shadow-[0_0_15px_rgba(168,85,247,0.5)]">
+            Rol
+          </h2>
+          <p class="text-white/70 text-base leading-relaxed tracking-widest">
+            Through this project, I was one of the people in charge of coding and launching the website to allow a better user experience.
+          </p>
+        </div>
+
+        <div>
+          <h2 class="text-2xl tracking-[0.15em] font-light mb-4 hover:drop-shadow-[0_0_15px_rgba(168,85,247,0.5)]">
+            ¡Try It!
+          </h2>
+          <a href="https://doortodoor-1.onrender.com"
+            target="_blank" rel="noopener noreferrer"
+            class="text-white/70 hover:text-purple-400 transition-colors text-base leading-relaxed tracking-widest underline underline-offset-4">
+            Door to Door
+          </a>
+        </div>
+      </div>
+
+      <!-- Columna Derecha: Tools & Selected Details -->
+      <div class="space-y-12">
+
+        <!-- Tools -->
+        <div>
+          <h2 class="text-2xl tracking-[0.15em] font-light mb-4 drop-shadow-[0_0_15px_rgba(168,85,247,0.5)]">
+            Tools
+          </h2>
+          <div class="flex flex-wrap gap-2">
+
+            <span class="px-4 py-1.5 bg-[#1b1228] border border-purple-900/50 rounded-lg text-base text-white/80 tracking-wider">GitHub</span>
+            <span class="px-4 py-1.5 bg-[#1b1228] border border-purple-900/50 rounded-lg text-base text-white/80 tracking-wider">Visual Studio Code</span>
+            <span class="px-4 py-1.5 bg-[#1b1228] border border-purple-900/50 rounded-lg text-base text-white/80 tracking-wider">AdonisJS</span>
+            <span class="px-4 py-1.5 bg-[#1b1228] border border-purple-900/50 rounded-lg text-base text-white/80 tracking-wider">Gsap</span>
+            <span class="px-4 py-1.5 bg-[#1b1228] border border-purple-900/50 rounded-lg text-base text-white/80 tracking-wider">Figma</span>
+            <span class="px-4 py-1.5 bg-[#1b1228] border border-purple-900/50 rounded-lg text-base text-white/80 tracking-wider">Canva</span>
+            
+          </div>
+        </div>
+
+        <!-- Selected Details (Grande + Delgada / Delgada + Grande, alineadas al borde derecho de start.png) -->
+      <div>
+  <h2 class="text-2xl tracking-[0.15em] font-light mb-4 drop-shadow-[0_0_15px_rgba(168,85,247,0.5)]">
+    Selected Details
+  </h2>
+
+  <div class="grid grid-cols-2 gap-3">
+    <!-- Fila 1: 2 cuadros -->
+    <img src="/images/membership.png" alt=""
+      class="min-w-0 w-full aspect-square object-cover object-top rounded-xl border border-purple-900/30 bg-[#120b1e]">
+
+    <img src="/images/ay.png" alt=""
+      class="min-w-0 w-full aspect-square object-cover object-top rounded-xl border border-purple-900/30 bg-[#120b1e]">
+
+    <!-- Fila 2: 2 cuadros -->
+    <img src="/images/agencies.png" alt=""
+      class="min-w-0 w-full aspect-square object-cover object-top rounded-xl border border-purple-900/30 bg-[#120b1e]">
+
+    <img src="/images/profile.png" alt=""
+      class="min-w-0 w-full aspect-square object-cover object-top rounded-xl border border-purple-900/30 bg-[#120b1e]">
+  </div>
+</div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+</body>
+
+</html>
