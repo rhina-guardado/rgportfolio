@@ -1,401 +1,176 @@
 <!DOCTYPE html>
-
 <html lang="en" class="scroll-smooth">
 
-
-
 <head>
-
   <meta charset="UTF-8">
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Portfolio - Rhina Guardado</title>
-
   <!-- Tailwind CSS CDN -->
-
   <script src="https://cdn.tailwindcss.com"></script>
-
   <link
-    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Inter:wght@300;400;500&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
     rel="stylesheet">
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
   <script>
-
     tailwind.config = {
-
       theme: {
-
         extend: {
-
           fontFamily: {
-
             sans: ['Inter', 'sans-serif'],
-
             heading: ['Space Grotesk', 'sans-serif'],
-
           }
-
         }
-
       }
-
     }
-
   </script>
-
 </head>
 
-
-
 <body
-  class="bg-[#06030e] text-white font-sans min-h-screen relative overflow-x-hidden flex flex-col justify-between selection:bg-purple-500 selection:text-white">
+  class="bg-[#05030b] bg-[radial-gradient(ellipse_at_top,rgba(168,85,247,0.14),transparent_55%),radial-gradient(ellipse_at_bottom_right,rgba(0,255,102,0.07),transparent_50%)] text-white font-sans min-h-screen relative overflow-x-hidden flex flex-col justify-between selection:bg-purple-500 selection:text-white">
 
-
-
-
-
-  <main class="w-full max-w-6xl mx-auto px-6 md:px-12 py-8 relative z-10 flex-grow flex flex-col justify-center">
-
-
-
-
-
-
-
-    <header class="w-full px-6 :px-16 pt-6 pb-14 flex justify-center items-center relative z-10 max-w-7xl mx-auto">
-      <nav class="hidden md:flex items-center space-x-10 text-lg font-medium text-white/80">
-        <a href="http://localhost:3333"
-          class="transition-all duration-300 hover:text-white hover:[text-shadow:0_0_15px_rgba(168,85,247,0.8)]">About</a>
-        <a href="http://localhost:3333/skills"
-          class="transition-all duration-300 hover:text-white hover:[text-shadow:0_0_15px_rgba(168,85,247,0.8)]">Skills</a>
-        <a href="http://localhost:3333/projects"
-          class="transition-all duration-300 hover:text-white hover:[text-shadow:0_0_15px_rgba(168,85,247,0.8)]">Projects</a>
-      </nav>
+  <!-- Header fuera de main para que abarque todo el ancho de la pantalla -->
+  <header class="w-full px-8 md:px-14 pt-8 pb-6 flex justify-center items-center relative z-10">
+        
+            
+        <nav class="hidden md:flex items-center space-x-10 text-lg font-medium text-white/80">
+            <a href="/"
+                class="transition-all duration-300 hover:text-white hover:[text-shadow:0_0_15px_rgba(168,85,247,0.8)]">About</a>
+            <a href="/certifications"
+                class="transition-all duration-300 hover:text-white hover:[text-shadow:0_0_15px_rgba(168,85,247,0.8)]">Certifications</a>
+            <a href="/projects"
+                class="transition-all duration-300 hover:text-white hover:[text-shadow:0_0_15px_rgba(168,85,247,0.8)]">Projects</a>
+        </nav>
     </header>
 
+  <main class="w-full max-w-6xl mx-auto px-6 md:px-12 py-8 relative z-10 flex-grow flex flex-col justify-center gap-6 mb-12">
 
-
-    <div>
-
-      <h1 class="font-heading text-4xl text-shadow:[0_0_15px_rgba(168,85,247,0.8)] items-center >Skills</h1>
-
+    <!-- Tarjeta 1: Celeste Neón -->
+    <article
+      class="card border border-[#00f0ff]/40 bg-[linear-gradient(135deg,rgba(5,20,30,0.72)_0%,rgba(2,10,15,0.88)_100%)] backdrop-blur-md rounded-2xl p-6 md:p-7 flex flex-col justify-between shadow-[0_0_15px_rgba(0,240,255,0.15)] hover:border-[#00f0ff] hover:shadow-[0_0_25px_rgba(0,240,255,0.35)] transition-all">
+      <div class="flex flex-col md:flex-row gap-8 items-start md:items-center">
+        <div class="relative flex-shrink-0 w-full md:w-[300px]">
+          <img src="/images/hackaton.png" alt="Dress to Impress preview"
+            class="w-full h-44 object-cover rounded-2xl border border-[#00f0ff]/30 drop-shadow-[0_0_8px_rgba(0,240,255,0.65)]" />
         </div>
 
+        <div class="flex flex-col">
+          <span class="font-sans text-xs md:text-sm tracking-[0.2em] uppercase font-medium text-[#00f0ff] mb-2">
+            Hackaton
+          </span>
 
+          <h2 class="font-heading text-xl md:text-2xl tracking-wider uppercase font-bold text-[#00f0ff] mb-3 drop-shadow-[0_0_10px_rgba(0,240,255,0.3)]">
+            Dress to Impress
+          </h2>
 
-        <div class=" grid grid-cols-1 md:grid-cols-2 gap-6 w-full mb-12">
+          <p class="font-sans text-white/75 text-sm md:text-base leading-relaxed font-normal mb-6">
+            It is a group web application carried out in 2024 and developed in about 6 months using technological
+            tools such as Figma, Power Apps, and SharePoint.
+          </p>
 
-
-
-        <!-- Tarjeta de Contacto -->
-
-        <div
-          class="border border-purple-500/50 bg-[linear-gradient(135deg,rgba(20,10,38,0.7)_0%,rgba(10,5,20,0.85)_100%)] backdrop-blur-md rounded-2xl m-4 p-6 md:p-7 flex flex-col justify-between shadow-[0_0_15px_rgba(139,92,246,0.15)] hover:border-purple-400 hover:shadow-[0_0_25px_rgba(168,85,247,0.3)] transition-all">
-
-
-
-
-          <div class="flex flex-col md:flex-row gap-10">
-
-
-
-            <div class="relative flex-shrink-0">
-
-              <img src="/images/hackaton.png" alt="Hackaton project"
-                class="row-span-3 mt-10 mr-44 text-[#00ff66] drop-shadow-[0_0_8px_rgba(0,255,102,0.8)]">
-
-            </div>
-
-
-
-
-
-            <div class="flex flex-col">
-
-              <div class="text-sm tracking-[0.2em] uppercase font-sans text-[#00f0ff] mb-4 justify-end">
-
-                Hackaton
-
-              </div>
-
-
-              <div class="text-lg tracking-[0.2em] uppercase font-bold text-[#00f0ff] mb-4 justify-end">
-
-                Dress to Impress
-
-              </div>
-
-
-
-
-
-              <div>
-
-                <p class="text-white/70 text-sm/8  font-normal tracking-wide">
-
-                  It is a group web application carried out in 2024
-                  and developed in about 6 months using technological
-                  tools such as Figma, Power Apps, and SharePoint. 
-
-                </p>
-
-
-              </div>
-
-
-              <div>
-                <button
-                  class="border rounded-2xl px-4 py-2 mt-4 text-base border-purple-500/50 hover:drop-shadow-[0_0_8px_rgba(0,255,102,0.8)] transition-all">Learn
-                  more</button>
-              </div>
-
-
-
-            </div>
-
-
-
-
-
+          <div>
+            <a href="/imdress"
+              class="inline-block border rounded-2xl px-4 py-2 text-sm md:text-base font-medium border-[#00f0ff]/40 text-[#00f0ff] hover:border-[#00f0ff] hover:drop-shadow-[0_0_8px_rgba(0,240,255,0.8)] transition-all">
+              Learn more
+            </a>
           </div>
+        </div>
+      </div>
+    </article>
 
-
-
+    <!-- Tarjeta 2: Morado (#a855f7) -->
+    <article
+      class="card border border-purple-500/50 bg-[linear-gradient(135deg,rgba(20,10,38,0.72)_0%,rgba(10,5,20,0.88)_100%)] backdrop-blur-md rounded-2xl p-6 md:p-7 flex flex-col justify-between shadow-[0_0_15px_rgba(168,85,247,0.16)] hover:border-purple-400 hover:shadow-[0_0_25px_rgba(168,85,247,0.35)] transition-all">
+      <div class="flex flex-col md:flex-row gap-8 items-start md:items-center">
+        <div class="relative flex-shrink-0 w-full md:w-[300px]">
+          <img src="/images/dtod.png" alt="Door to Door Prototype preview"
+            class="w-full h-44 object-cover rounded-2xl border border-purple-500/30 drop-shadow-[0_0_8px_#a855f7cc]" />
         </div>
 
-
-
-
-
-
-
-
-
-
-
-
-        <!-- Tarjeta de Contacto -->
-<!-- Tarjeta con acentos Celeste Neón -->
-<div class="border border-[#00f0ff]/40 bg-[linear-gradient(135deg,rgba(5,20,30,0.7)_0%,rgba(2,10,15,0.85)_100%)] backdrop-blur-md rounded-2xl m-4 p-6 md:p-7 flex flex-col justify-between shadow-[0_0_15px_rgba(0,240,255,0.15)] hover:border-[#00f0ff] hover:shadow-[0_0_25px_rgba(0,240,255,0.35)] transition-all">
-
-  <div class="flex flex-col md:flex-row gap-10">
-
-    <div class="relative flex-shrink-0">
-      <img src="/images/hackaton.jpg"  width="250" height="74"
-        class="row-span-3 mt-10 mr-20 drop-shadow-[0_0_8px_rgba(0,240,255,0.8)]" />
-    </div>
-
-    <div class="flex flex-col">
-
-      <div class="text-sm tracking-[0.2em] uppercase font-sans text-[#00f0ff] mb-4 justify-end">
-        Hackaton
-      </div>
-
-      <div class="text-lg tracking-[0.2em] uppercase font-bold text-[#00f0ff] mb-4 justify-end">
-        Dress to Impress
-      </div>
-
-      <div>
-        <p class="text-white/70 text-sm/8 font-normal tracking-wide">
-          It is a group web application carried out in 2024
-          and developed in about 6 months using technological
-          tools such as Figma, Power Apps, and SharePoint.
-        </p>
-      </div>
-
-      <div>
-        <button class="border rounded-2xl px-4 py-2 mt-4 text-base border-[#00f0ff]/40 text-[#00f0ff] hover:border-[#00f0ff] hover:drop-shadow-[0_0_8px_rgba(0,240,255,0.8)] transition-all">
-          Learn more
-        </button>
-      </div>
-
-    </div>
-
-  </div>
-
-</div>
-
-
-
-
-
-
-        <div
-          class="border border-purple-500/50 bg-[linear-gradient(135deg,rgba(20,10,38,0.7)_0%,rgba(10,5,20,0.85)_100%)] backdrop-blur-md rounded-2xl m-4 p-6 md:p-7 flex flex-col justify-between shadow-[0_0_15px_rgba(139,92,246,0.15)] hover:border-purple-400 hover:shadow-[0_0_25px_rgba(168,85,247,0.3)] transition-all">
-
-
-
-
-
-          <div class="flex flex-col md:flex-row gap-10">
-
-
-
-            <div class="relative flex-shrink-0">
-
-              <svg xmlns="http://www.w3.org/2000/svg" width="74" height="74" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="lucide lucide-brain preview-icon row-span-3 mt-10 text-[#a855f7] drop-shadow-[0_0_8px_rgba(168,85,247,0.8)]">
-
-                <path d="M12 18V5" />
-
-                <path d="M15 13a4.17 4.17 0 0 1-3-4 4.17 4.17 0 0 1-3 4" />
-
-                <path d="M17.598 6.5A3 3 0 1 0 12 5a3 3 0 1 0-5.598 1.5" />
-
-                <path d="M17.997 5.125a4 4 0 0 1 2.526 5.77" />
-
-                <path d="M18 18a4 4 0 0 0 2-7.464" />
-
-                <path d="M19.967 17.483A4 4 0 1 1 12 18a4 4 0 1 1-7.967-.517" />
-
-                <path d="M6 18a4 4 0 0 1-2-7.464" />
-
-                <path d="M6.003 5.125a4 4 0 0 0-2.526 5.77" />
-
-              </svg>
-
-            </div>
-
-
-
-
-
-            <div class="flex flex-col">
-
-              <div class="text-lg tracking-[0.2em] uppercase font-bold mb-4 text-[#a855f7] justify-end">
-
-                Mathematical Analysis
-
-              </div>
-
-
-
-
-
-              <div>
-
-                <p class="text-white/70 text-sm/8  font-normal tracking-wide">
-
-                  Ability to work with data, perform accurate calculations, and understand the logic
-
-                  behind problems.
-
-                </p>
-
-              </div>
-
-            </div>
-
-
-
-
-
+        <div class="flex flex-col">
+          <span class="font-sans text-xs md:text-sm tracking-[0.2em] uppercase font-medium text-[#a855f7] mb-2">
+            Expo Logros
+          </span>
+
+          <h2 class="font-heading text-xl md:text-2xl tracking-wider uppercase font-bold text-[#a855f7] mb-3 drop-shadow-[0_0_10px_rgba(168,85,247,0.35)]">
+            Door to Door - Prototype
+          </h2>
+
+          <p class="font-sans text-white/75 text-sm md:text-base leading-relaxed font-normal mb-6">
+            A group web project born out of nostalgia and the lack of access to Salvadoran products for our people
+            living abroad.
+          </p>
+
+          <div>
+            <a href="/dtod"
+              class="inline-block border rounded-2xl px-4 py-2 text-sm md:text-base font-medium border-[#a855f7]/40 text-[#a855f7] hover:border-[#a855f7] hover:drop-shadow-[0_0_8px_#a855f7cc] transition-all">
+              Learn more
+            </a>
           </div>
+        </div>
+      </div>
+    </article>
 
-
-
+    <!-- Tarjeta 3: Celeste Neón -->
+    <article
+      class="card border border-[#00f0ff]/40 bg-[linear-gradient(135deg,rgba(5,20,30,0.72)_0%,rgba(2,10,15,0.88)_100%)] backdrop-blur-md rounded-2xl p-6 md:p-7 flex flex-col justify-between shadow-[0_0_15px_rgba(0,240,255,0.15)] hover:border-[#00f0ff] hover:shadow-[0_0_25px_rgba(0,240,255,0.35)] transition-all">
+      <div class="flex flex-col md:flex-row gap-8 items-start md:items-center">
+        <div class="relative flex-shrink-0 w-full md:w-[300px]">
+          <img src="/images/start.png" alt="Door to Door Website preview"
+            class="w-full h-44 object-cover rounded-2xl border border-[#00f0ff]/30 drop-shadow-[0_0_8px_rgba(0,240,255,0.65)]" />
         </div>
 
+        <div class="flex flex-col">
+          <span class="font-sans text-xs md:text-sm tracking-[0.2em] uppercase font-medium text-[#00f0ff] mb-2">
+            Expo Tech
+          </span>
 
+          <h2 class="font-heading text-xl md:text-2xl tracking-wider uppercase font-bold text-[#00f0ff] mb-3 drop-shadow-[0_0_10px_rgba(0,240,255,0.3)]">
+            Door to Door - Website
+          </h2>
 
+          <p class="font-sans text-white/75 text-sm md:text-base leading-relaxed font-normal mb-6">
+            A group web project developed for Expo Logros and consolidated at Expo Tech.
+          </p>
 
-
-
-
-        <!-- Tarjeta de Contacto -->
-
-        <div
-          class="border border-purple-500/50 bg-[linear-gradient(135deg,rgba(20,10,38,0.7)_0%,rgba(10,5,20,0.85)_100%)] backdrop-blur-md rounded-2xl m-4 p-6 md:p-7 flex flex-col justify-between shadow-[0_0_15px_rgba(139,92,246,0.15)] hover:border-purple-400 hover:shadow-[0_0_25px_rgba(168,85,247,0.3)] transition-all">
-
-
-
-
-
-          <div class="flex flex-col md:flex-row gap-10">
-
-
-
-            <div class="relative flex-shrink-0">
-
-              <svg xmlns="http://www.w3.org/2000/svg" width="74" height="74" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="lucide lucide-brain preview-icon row-span-3 mt-10 text-[#a855f7] drop-shadow-[0_0_8px_rgba(168,85,247,0.8)]">
-
-                <path d="M12 18V5" />
-
-                <path d="M15 13a4.17 4.17 0 0 1-3-4 4.17 4.17 0 0 1-3 4" />
-
-                <path d="M17.598 6.5A3 3 0 1 0 12 5a3 3 0 1 0-5.598 1.5" />
-
-                <path d="M17.997 5.125a4 4 0 0 1 2.526 5.77" />
-
-                <path d="M18 18a4 4 0 0 0 2-7.464" />
-
-                <path d="M19.967 17.483A4 4 0 1 1 12 18a4 4 0 1 1-7.967-.517" />
-
-                <path d="M6 18a4 4 0 0 1-2-7.464" />
-
-                <path d="M6.003 5.125a4 4 0 0 0-2.526 5.77" />
-
-              </svg>
-
-            </div>
-
-
-
-
-
-            <div class="flex flex-col">
-
-              <div class="text-lg tracking-[0.2em] uppercase font-bold mb-4 text-[#a855f7] justify-end">
-
-                Fast Learner
-
-              </div>
-
-
-
-
-
-              <div>
-
-                <p class="text-white/70 text-sm/8  font-normal tracking-wide">
-
-                  Quick to adapt and grasp new tools and processes without missing a beat.
-
-                </p>
-
-              </div>
-
-            </div>
-
-
-
-
-
+          <div>
+            <a href="/dd"
+              class="inline-block border rounded-2xl px-4 py-2 text-sm md:text-base font-medium border-[#00f0ff]/40 text-[#00f0ff] hover:border-[#00f0ff] hover:drop-shadow-[0_0_8px_rgba(0,240,255,0.8)] transition-all">
+              Learn more
+            </a>
           </div>
-
-
-
         </div>
-
-          </div>
-
-
-
-
-
-
-
-
-
-
-
+      </div>
+    </article>
 
   </main>
 
+  <footer class="w-full text-center py-6 text-xs text-white/40 border-t border-purple-950/50 relative z-10">
+    © 2026 Rhina Guardado. All rights reserved.
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    // Recorre cada tarjeta para que cada una tenga su propio trigger
+    gsap.utils.toArray(".card").forEach((card) => {
+      gsap.from(card, {
+        y: 60,            // sube desde 60px abajo
+        opacity: 0,
+        duration: 0.8,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: card,
+          start: "top 85%",   // cuando el top de la tarjeta llega al 85% de la pantalla
+          toggleActions: "play none none none"
+        },
+        // Tus tarjetas tienen "transition-all" de Tailwind y pelea con GSAP
+        onStart: () => (card.style.transition = "none"),
+        onComplete: () => (card.style.transition = "")
+      });
+    });
+  </script>
 </body>
+
+</html>
